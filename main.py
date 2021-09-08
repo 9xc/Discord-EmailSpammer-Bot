@@ -31,7 +31,7 @@ bot = commands.Bot(command_prefix='!', description="peepee")
 bot.remove_command("help")
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity = discord.Streaming(name="egirlraper on github", url="https://www.twitch.tv/egirlraper"))
+    await bot.change_presence(activity = discord.Streaming(name="9xc on github", url="https://www.twitch.tv/9xc"))
     type(f""""{Fore.RED}
     ███████╗███╗   ███╗ █████╗ ██╗██╗         
     ██╔════╝████╗ ████║██╔══██╗██║██║         
@@ -65,8 +65,8 @@ async def email(ctx,count=None,bomb_email=None,*,message=None):
         second = str(currentDT.second)
         print(f"{Fore.RED}[{Fore.WHITE}{hour}:{minute}:{second}{Fore.RED}]{Fore.GREEN} [Command used] - {ctx.author.name}#{ctx.author.discriminator}:{Fore.RESET} !email {count} {bomb_email} {message}")
         counting = int(0)
-        embed=discord.Embed(title=f"{counting}/{count}", url="https://github.com/egirlraper", color=0xff0000)
-        embed.set_author(name="Email sent!", url="https://github.com/egirlraper")
+        embed=discord.Embed(title=f"{counting}/{count}", url="https://github.com/9xc", color=0xff0000)
+        embed.set_author(name="Email sent!", url="https://github.com/9xc")
         embed.set_thumbnail(url="https://cdn.iconscout.com/icon/free/png-256/gmail-30-722694.png")
         embed.add_field(name=f'Sending "{message}"', value=f'**to {bomb_email}**', inline=False)
         embed.set_footer(text=f"Requested by {ctx.author.name}#{ctx.author.discriminator}")
@@ -84,14 +84,14 @@ async def email(ctx,count=None,bomb_email=None,*,message=None):
             second = str(currentDT.second)
             print(f"{Fore.RED}[{Fore.WHITE}{hour}:{minute}:{second}{Fore.RED}]{Fore.GREEN} Message Sent:{Fore.RESET} {message} {Fore.GREEN}To {Fore.RESET}{bomb_email}")
             counting = counting + 1
-            embed=discord.Embed(title=f"{counting}/{count}", url="https://github.com/egirlraper", color=0xff0000)
-            embed.set_author(name="Email sent!", url="https://github.com/egirlraper")
+            embed=discord.Embed(title=f"{counting}/{count}", url="https://github.com/9xc", color=0xff0000)
+            embed.set_author(name="Email sent!", url="https://github.com/9xc")
             embed.set_thumbnail(url="https://cdn.iconscout.com/icon/free/png-256/gmail-30-722694.png")
             embed.add_field(name=f'Sending "{message}"', value=f'**to {bomb_email}**', inline=False)
             embed.set_footer(text=f"Requested by {ctx.author.name}#{ctx.author.discriminator}")
             await msg.edit(embed=embed)
-        embed=discord.Embed(title="Please consider following!", url="https://github.com/egirlraper", color=0xff0000)
-        embed.set_author(name="Done spamming!", url="https://github.com/egirlraper")
+        embed=discord.Embed(title="Please consider following!", url="https://github.com/9xc", color=0xff0000)
+        embed.set_author(name="Done spamming!", url="https://github.com/9xc")
         embed.set_thumbnail(url="https://cdn.iconscout.com/icon/free/png-256/gmail-30-722694.png")
         await msg.edit(embed=embed)
 
